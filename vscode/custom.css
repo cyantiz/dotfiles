@@ -1,0 +1,116 @@
+.mtk8 {
+  font-style: italic;
+}
+
+.editor-container .editor-instance>.monaco-editor .overflow-guard>.monaco-scrollable-element>.monaco-editor-background{
+    background: rgba(0,0,0,0);
+}
+
+/* Bottom border of active tab */
+.monaco-workbench .part.editor > .content .editor-group-container > .title .tabs-container > .tab.active.tab-border-bottom > .tab-border-bottom-container {
+  background-size: 400% 400%;
+  background-image: linear-gradient(
+    -45deg,
+    #20e3b2,
+    #fc6c8f,
+    #ffcc70,/**.
+    /* #ff2ced, */
+    /* #ffb86c, */
+    #2cccff,
+    #20e3b2,
+    #ffcc70,
+    /* #c850c0, */
+    #fc6c8f,/**/
+    #4158d0
+  );
+  animation: gradient 5s ease alternate infinite;
+  height: 3px;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.monaco-workbench .activitybar > .content :not(.monaco-menu) > .monaco-action-bar .action-item.checked .active-item-indicator:before {
+  /* border-left-color: rgba(0,0,0,0); */
+}
+
+
+
+/* [id="workbench.parts.editor"] .split-view-view:nth-child(1) */
+.editor-container .editor-instance>.monaco-editor .overflow-guard>.monaco-scrollable-element::before {
+    background-image: url(/Users/hoangnhan1203/Pictures/Wallpaper/peakpx.jpg);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    background-size: cover;
+}
+
+[id="workbench.parts.editor"] .split-view-view:nth-child(2)
+.editor-container .editor-instance>.monaco-editor .overflow-guard>.monaco-scrollable-element::before {
+    background-image: url(/Users/hoangnhan1203/Pictures/Wallpaper/91622666_p15.jpg);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    background-size: cover;
+}
+
+
+.tabs-and-actions-container > .monaco-scrollable-element > .tabs-container {
+  flex-wrap: wrap;
+  height: initial !important;
+}
+
+.margin .margin-view-overlays .line-numbers.active-line-number {
+  color: rgba(255, 203, 107, 0.7);
+}
+
+.part.activitybar.left.bordered::after {
+  z-index: 100;
+  position: absolute;
+  right:0;
+  top: 0;
+  content: "";
+  height: 100%;
+  width: 2px;
+  background-size: 400% 400%;
+  background-image: linear-gradient(
+    0deg,
+    #20e3b2,
+    #fc6c8f,
+    #ffcc70,
+    #2cccff,
+    #20e3b2,
+    #ffcc70,
+    #fc6c8f,
+    #4158d0
+  );
+  animation: gradient2 5s ease alternate infinite;
+}
+
+@keyframes gradient2 {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
