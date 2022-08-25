@@ -121,11 +121,20 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+alias sudo='sudo '
+
 # alias sublime text
 alias st="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # alias firefox
 alias ff="/Applications/Firefox.app/Contents/MacOS/firefox-bin"
+
+# alias clear screen
+alias cls="clear"
+
+# alias config git profile
+alias "git_cyantiz"="sh ~/.git_config_default"
+alias "git_work"="sh ~/.git_config_work"
 
 # ENV PATH composer packages
 export PATH=~/.composer/vendor/bin:$PATH  
@@ -133,3 +142,5 @@ export PATH=~/.composer/vendor/bin:$PATH
 # ENV PATH XAMPP
 export PATH=/Applications/XAMPP/xamppfiles/bin:$PATH
 eval $(thefuck --alias)
+export PATH=$PATH:/Users/hoangnhan1203/.spicetify
+

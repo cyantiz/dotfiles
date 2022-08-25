@@ -2,7 +2,7 @@
   font-style: italic;
 }
 
-.editor-container .editor-instance>.monaco-editor .overflow-guard>.monaco-scrollable-element>.monaco-editor-background{
+.editor-container .editor-instance>.monaco-editor .overflow-guard>.monaco-scrollable-element>.monaco-editor-background {
     background: rgba(0,0,0,0);
 }
 
